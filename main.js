@@ -4,3 +4,7 @@ $(".search").mouseenter(function () {
 $(".search").mouseleave(function () {
     $(this).removeClass("shadow");
 });
+
+$(".menu-icon").click(function () {
+    $(".dropdown").toggle();
+});

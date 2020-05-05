@@ -70,6 +70,45 @@ ul.right-list {
     height: 60px;
 }
 
+.menu-icon {
+    font-size: 16px;
+    position: relative;
+}
+
+div.dropdown {
+    display: none;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 60px;
+    right: 45px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.dropdown .card {
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+div.dropdown img {
+    width: 80%;
+    height: 80%;
+}
+
+.dropdown .card:hover {
+    background-color: rgba(255, 192, 203, 0.411);
+}
+
+div.dropdown i {
+    font-size: 70px;
+}
+
 ul.right-list li a {
     text-decoration: none;
 }
@@ -169,7 +208,7 @@ ul.right-list li a {
 footer {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
