@@ -85,6 +85,14 @@ ul.right-list li a:not(.btn):hover {
     position: relative;
 }
 
+/* .display {
+    display: block;
+} */
+
+.no-display {
+    display: none;
+}
+
 div.dropdown {
     display: none;
     width: 300px;
@@ -284,6 +292,7 @@ footer a:not(.btn):hover {
 .footer-center span {
     line-height: 40px;
     font-size: 15px;
+    color: rgba(0, 0, 0, 0.54);
 }
 
 /* ------------- */
