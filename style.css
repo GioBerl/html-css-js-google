@@ -16,6 +16,7 @@ body {
 .btn {
     padding: 7px 10px;
     color: white;
+    text-decoration: none;
 }
 
 .btn-blue {
@@ -53,6 +54,11 @@ ul.left-list {
 
 ul.left-list li a {
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+ul.left-list li a:hover {
+    text-decoration: underline;
 }
 
 /* ------------- */
@@ -68,6 +74,10 @@ ul.right-list {
     align-items: center;
     list-style-type: none;
     height: 60px;
+}
+
+ul.right-list li a:not(.btn):hover {
+    text-decoration: underline;
 }
 
 .menu-icon {
@@ -86,6 +96,8 @@ div.dropdown {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: auto;
+    background-color: white;
+    z-index: 10;
 }
 
 .dropdown .card {
@@ -109,8 +121,9 @@ div.dropdown i {
     font-size: 70px;
 }
 
-ul.right-list li a {
+ul.right-list li a:not(.btn) {
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 /* MAIN */
@@ -142,6 +155,8 @@ ul.right-list li a {
     border: 1px solid #d9d9d9;
     border-right: none;
     border-left: none;
+    font: 16px arial, sans-serif;
+    /* line-height: 34px; */
 }
 
 .shadow {
@@ -216,6 +231,11 @@ footer {
 
 footer a {
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+footer a:not(.btn):hover {
+    text-decoration: underline;
 }
 
 /* FOOTER-TOP */
