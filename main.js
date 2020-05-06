@@ -12,10 +12,10 @@ $(".menu-icon").click(function () {
     $(".dropdown").toggle();
 });
 
-// !RICORDA CHE DEVI SELEZIONARE IL TARGET COME OGGETTO JQUERY ==> $(e.target)
+// !RICORDA CHE DEVI SELEZIONARE IL TARGET COME OGGETTO JQUERY ==> $(e.target) senno se usi solo e.target e' un oggetto JS a cui non puoi applicare i metodi di JQUERY
 $(document).click(function (e) {
     var target = $(e.target);
     if ($(".dropdown").is(":visible") && !target.hasClass("menu-icon")) {
-        $("div.dropdown").toggle();
+        $("div.dropdown").hide();
     }
 });
