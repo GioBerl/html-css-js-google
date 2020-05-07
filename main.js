@@ -4,6 +4,11 @@ $(document).ready(function () {
         $(".footer-top-wrapper").fadeIn();
     }, 3000);
 
+    //al click su 'ricordamelo piu tardi' footer-top scompare
+    $(".later").click(function () {
+        $(".footer-top-wrapper").fadeOut();
+    });
+
     //shadow sull'hover del search
     $(".search").mouseenter(function () {
         $(this).addClass("shadow");
